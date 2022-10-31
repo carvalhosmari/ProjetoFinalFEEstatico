@@ -1,0 +1,46 @@
+@import url(style.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: "Source Sans Pro";
+}
+
+body, html {
+    width: 100vw;
+    background-image: url(../images/bg.jpg);
+    scroll-behavior: smooth;
+}
+
+.painel {
+    height: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.subPainel {
+    display: flex;
+    justify-content: center;
+    line-height: 10rem;
+}
+
+.subPainel ul, li {
+    list-style-type: none;
+}
+
+.subPainel a {
+    padding: 1rem 2rem;
+    border-color: aliceblue;
+    border-style: solid;
+    color: aliceblue;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.subPainel a:hover {
+    color: #18bfef;
+    border-color: #18bfef;
+}

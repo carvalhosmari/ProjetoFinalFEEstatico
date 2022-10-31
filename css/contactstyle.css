@@ -1,0 +1,131 @@
+@import url(style.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: "Source Sans Pro";
+}
+
+section {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+
+.painel {
+    height: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.subPainel {
+    display: flex;
+    justify-content: center;
+    line-height: 10rem;
+}
+
+.subPainel ul, li {
+    list-style-type: none;
+}
+
+.subPainel a {
+    padding: 1rem 2rem;
+    border-color: aliceblue;
+    border-style: solid;
+    color: aliceblue;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.subPainel a:hover {
+    color: #18bfef;
+    border-color: #18bfef;
+}
+
+.contato, .infos {
+    padding: 2%;
+    align-items: center;
+    width: 50%;
+    border-bottom: 2px;
+    border-bottom-color: rgba(128, 128, 128, 0.50);
+    border-bottom-style: solid;
+    border-left: 2px;
+    border-left-color: rgba(128, 128, 128, 0.50);
+    border-left-style: solid;
+}
+
+.campos {
+    display: grid;
+    flex-wrap: wrap;
+}
+
+.campo {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: grid;
+}
+
+.infos {
+    display: grid;
+}
+
+.infos h4 {
+    margin-right: 20px;
+    color: #717981
+}
+
+.infos p {
+    color: #717981;
+}
+
+.endereco, .email, .telefone {
+    height: 33.3%;
+    display: flex;
+    vertical-align: middle;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
+.campo label {
+    margin: 15px 0 6px 0;
+    letter-spacing: 1px;
+    color: #717981;
+    font-weight: 600;
+}
+
+.btnEnviar {
+    margin: 1rem 0 1rem 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: #212931;
+    border-color: #212931;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.btnEnviar:hover {
+    color: #18bfef;
+    border: 2px solid #18bfef;
+}
+
+
+@media screen and (max-width:600px) {
+    section {
+        display: inline
+    }
+
+    .contato {
+        width: 90%;
+        border-left: none;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .infos {
+        border-left: none;
+    }
+}
