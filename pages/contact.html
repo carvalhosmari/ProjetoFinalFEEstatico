@@ -66,18 +66,19 @@
                 <div class="campos">
                     <div class="campo">
                         <label for="name">Nome</label>
-                        <input type="text" name="nome">
+                        <input type="text" name="nome" id="name" required>
                     </div>
                     <div class="campo">
                         <label for="email">Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="campo">
                         <label for="mensagem">Mensagem</label>
-                        <textarea name="mensagem" rows="3"></textarea>
+                        <textarea name="mensagem" rows="3" id="message" required></textarea>
                     </div>
                 </div>
-                <input class="btnEnviar" type="submit" value="ENVIAR">
+                <input type="submit" value="ENVIAR" id="sub" >
+                <!-- <label id="confirmacao"></label> -->
             </form>
             <script src="../js/script.js"></script>
         </div>

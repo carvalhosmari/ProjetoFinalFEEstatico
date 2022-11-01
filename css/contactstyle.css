@@ -96,7 +96,7 @@ section {
     font-weight: 600;
 }
 
-.btnEnviar {
+#sub {
     margin: 1rem 0 1rem 0;
     background-color: transparent;
     cursor: pointer;
@@ -107,7 +107,7 @@ section {
     letter-spacing: 1px;
 }
 
-.btnEnviar:hover {
+#sub:hover {
     color: #18bfef;
     border: 2px solid #18bfef;
 }
